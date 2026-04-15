@@ -1,0 +1,240 @@
+.comment-area {
+  padding-top: 36px;
+  border-top: 2px solid #e8e6e0;
+}
+
+.comment-area .btn-load-more {
+  display: block;
+  margin: 12px auto 48px auto;
+  padding: 8px 24px;
+  background: transparent;
+  border: 1.5px solid #e8e6e0;
+  border-radius: 20px;
+  color: #c0bdb8;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  letter-spacing: 0.05em;
+}
+
+.comment-area .btn-load-more:hover {
+  border-color: #8a8880;
+  color: #8a8880;
+}
+
+.comment-area .error-msg {
+  margin-top: 10px;
+  background: #fdf0f0;
+  color: #e05050;
+  font-size: 15px;
+  padding: 10px 17px;
+  border-radius: 10px;
+}
+
+.comment-area .counts {
+  color: #8a8880;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-area .badge-status {
+  padding: 5px 11px;
+  border-radius: 16px;
+  color: #fafaf8;
+  background: #1a1916;
+  font-size: 13px;
+}
+
+.comment-area .alert {
+  white-space: pre-wrap;
+  border-radius: 10px;
+  margin-top: 12px;
+  background: #fafaf8;
+  padding: 10px 17px;
+  font-size: 15px;
+  color: #8a8880;
+  display: flex;
+}
+
+.comment-area .alert a {
+  color: #d97706;
+  text-decoration: underline;
+}
+
+.comment-area .add-comment-form {
+  margin-top: 24px;
+}
+
+.comment-area .name-input input {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.comment-area .name-input input:hover {
+  outline: 1px solid #d97706;
+}
+
+.comment-area textarea {
+  border: none;
+  outline: unset;
+  margin-top: 12px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.comment-area textarea:focus {
+  outline: 1px solid #d97706;
+}
+
+.comment-area .warning {
+  color: #c0bdb8;
+  font-size: 12px;
+}
+
+.comment-area .btn-send-comment {
+  cursor: pointer;
+  width: fit-content;
+  background: #1a1916;
+  padding: 8px 16px;
+  color: #fafaf8;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.comment-area .btn-logout {
+  cursor: pointer;
+  margin-left: auto;
+  text-decoration: underline;
+  font-size: 12px;
+  color: #c0bdb8;
+}
+
+.comment-area .login-avatar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment-area .comments {
+  margin-top: 24px;
+}
+
+.comment-area .comments .comment {
+  padding: 20px 0;
+}
+
+.comment-area .comments .comment + .comment {
+  padding: 20px 0;
+  border-top: 2px solid #e8e6e0;
+}
+
+.comment-area .comments .comment__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-area .comments .comment__author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment-area .comments .comment__author__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fffbeb;
+}
+
+.comment-area .comments .comment__author__name {
+  color: #3a3830;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.comment-area .comments .comment .tag-anonymous {
+  color: #c0bdb8;
+  padding: 1px 8px;
+  border: 1px solid #c0bdb8;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.comment-area .comments .comment.edit input {
+  color: #8a8880;
+  margin-left: 38px;
+  background: inherit;
+  padding: 5px;
+  border-bottom: 1px solid #e8e6e0;
+}
+
+.comment-area .comments .comment.edit input:focus {
+  outline: none;
+}
+
+.comment-area .comments .comment .btn-send-edit-comment,
+.comment-area .comments .comment .btn-cancel-edit-comment {
+  cursor: pointer;
+  font-size: 12px;
+  color: #c0bdb8;
+}
+
+.comment-area .comments .comment .btn-send-edit-comment:hover,
+.comment-area .comments .comment .btn-cancel-edit-comment:hover {
+  color: #8a8880;
+}
+
+.comment-area .comments .comment__date {
+  color: #c0bdb8;
+  font-size: 13px;
+}
+
+.comment-area .comments .comment__content {
+  margin-left: 38px;
+  margin-top: 10px;
+  color: #3a3830;
+  font-size: 15px;
+}
+
+.comment-area .comments .comment__body,
+.comment-area .comments .comment__body__edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-area .comments .comment__body input,
+.comment-area .comments .comment__body__edit input {
+  margin-left: 38px;
+  margin-top: 10px;
+  color: #3a3830;
+  font-size: 15px;
+  background: inherit;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e8e6e0;
+}
+
+.comment-area .comments .comment__tools {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.comment-area .comments .comment__tools img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.comment-area .comments .comment .btn-edit-comment,
+.comment-area .comments .comment .btn-delete-comment {
+  width: 15px;
+  height: 15px;
+}

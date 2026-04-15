@@ -41,7 +41,7 @@ DROP TABLE IF EXISTS `app_keys`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `app_keys` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(128) CHARACTER SET utf8 NOT NULL,
+  `username` varchar(128) NOT NULL,
   `app_key` varchar(128) NOT NULL,
   `secret_key_hash` varchar(128) NOT NULL,
   `name` varchar(64) NOT NULL,

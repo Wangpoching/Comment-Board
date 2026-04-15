@@ -25,8 +25,8 @@ async function init({
 		...loginParams,
 		appKey,
 	}).toString()
-	const loginUrl = `http://localhost/board/login.php?${loginQueryString}`
-	const BOARD_API = 'http://localhost/board/api'
+	const loginUrl = `${process.env.BOARD_URL}/login.php?${loginQueryString}`
+	const BOARD_API = `${process.env.BOARD_URL}/api`
 
   store.container = container
   store.userToken = userToken

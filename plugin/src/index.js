@@ -19,7 +19,8 @@ async function init({
 	getAppTokenUrl, // 提供取得 appToken 的 API 讓 plugin 可以自己管理 appToken 的生命週期
 	loginParams, // 留言板使用者登入的網址專案想要另外提供的參數(物件)
 	appKey,
-	userToken // userToken 由引入的專案提供
+	userToken, // userToken 由引入的專案提供
+  articlesCount // 顯示有幾篇文章, 由引入的專案提供
 }) {
 	const loginQueryString = new URLSearchParams({
 		...loginParams,
@@ -39,6 +40,7 @@ async function init({
 	// 在 Container 寫入 commtents area
 	const commentArea = document.createElement('div')
 	commentArea.innerHTML = commentsAreaTemplate
+  commentArea.querySelector('counts').innerText = `Comments (${articlesCount})`
 	commentArea.querySelector('.alert a').setAttribute('href', loginUrl)
 	container.replaceChildren(commentArea)
 	const commentsEl = container.querySelector('.comments')

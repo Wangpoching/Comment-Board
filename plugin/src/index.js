@@ -40,7 +40,7 @@ async function init({
 	// 在 Container 寫入 commtents area
 	const commentArea = document.createElement('div')
 	commentArea.innerHTML = commentsAreaTemplate
-  commentArea.querySelector('counts').innerText = `Comments (${articlesCount})`
+  commentArea.querySelector('.counts').innerText = `Comments (${articlesCount})`
 	commentArea.querySelector('.alert a').setAttribute('href', loginUrl)
 	container.replaceChildren(commentArea)
 	const commentsEl = container.querySelector('.comments')

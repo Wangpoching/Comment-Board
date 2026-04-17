@@ -49,12 +49,7 @@
     $sql = "INSERT INTO `comments` (username, content, app_key, identifier) VALUES (?, ?, ?, ?)";
     $result = executeUpdate($conn, $sql, 'ssss', $username, $content, $appKey, $identifier);
     if (!$result['success'] || $result['affected_rows'] === 0) {
-      echo json_encode(["ok" => false, "ERRORDATA" => [
-        "username" => $username,
-        "content" => $content,
-        "appKey" => $appKey,
-        "identifier" => $identifier,
-      ]]);
+      echo json_encode(["ok" => false, "message" => "系統錯誤"]);
       exit();
     }
     $insertId = $result['insert_id'];

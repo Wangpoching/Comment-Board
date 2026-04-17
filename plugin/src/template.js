@@ -1,7 +1,7 @@
 // template.js
 export const commentsAreaTemplate =`
 <div class="comment-area">
-	<div class="counts">Comments (3)<span class="badge badge-status">未登入</span></div>
+	<div class="counts">Comments ()<span class="badge badge-status">未登入</span></div>
 	<div class="alert">Want to manage your comments?  <a href="">login to comment board</a></div>
 	<form class="add-comment-form">
 		<div class="name-input">

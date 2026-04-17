@@ -40,7 +40,7 @@
     $sql = "INSERT INTO `comments` (content, app_key, identifier, authorname) VALUES (?, ?, ?, ?)";
     $result = executeUpdate($conn, $sql, 'ssss', $content, $appKey, $identifier, $_POST['authorname']);
     if (!$result['success'] || $result['affected_rows'] === 0) {
-      echo json_encode(["ok" => false, "message" => "系統錯誤"]);
+      echo json_encode(["ok" => false, "message" => "系統錯誤1"]);
       exit();
     }
     $insertId = $result['insert_id'];
@@ -49,7 +49,7 @@
     $sql = "INSERT INTO `comments` (username, content, app_key, identifier) VALUES (?, ?, ?, ?)";
     $result = executeUpdate($conn, $sql, 'ssss', $username, $content, $appKey, $identifier);
     if (!$result['success'] || $result['affected_rows'] === 0) {
-      echo json_encode(["ok" => false, "message" => "系統錯誤"]);
+      echo json_encode(["ok" => false, "message" => "系統錯誤2"]);
       exit();
     }
     $insertId = $result['insert_id'];
@@ -63,7 +63,7 @@
   ";
   $result = executeQuery($conn, $sql, 'i', (int)$insertId);
   if (!$result) {
-    echo json_encode(["ok" => false, "message" => "系統錯誤"]);
+    echo json_encode(["ok" => false, "message" => "系統錯誤3"]);
     exit();    
   }
   $newComment = $result->fetch_assoc();
